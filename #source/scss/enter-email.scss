@@ -1,0 +1,45 @@
+.enter-email {
+    margin: 0 auto;
+    background-color: #CED3CA;
+    padding-top: 15vw;
+    padding-bottom: 8.8vw;
+}
+
+.enter-email__title {
+    font-size: 34px;
+    line-height: 45px;
+    color: #1A1A1A;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.enter-email__text {   
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1A1A;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    max-width: 373px;
+    text-align: center;
+}
+
+.enter-email__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.enter-email__email {
+    height: 48px;
+    width: 338px;
+    border: 1px solid #242424;
+}
+
+.enter-email__send {
+    background-color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    height: 48px;
+    width: 66px;
+    border: 1px solid #242424;
+}

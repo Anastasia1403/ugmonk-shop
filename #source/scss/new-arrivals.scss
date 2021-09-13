@@ -1,0 +1,51 @@
+
+.new-arrivals {
+    margin-top: calc(4vw - 20px);
+    padding-bottom: 11vw;   
+}
+
+.new-arrivals__table {    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.new-arrivals__item {
+    cursor: pointer;
+}
+
+.new-arrivals__item-pic-container {
+    overflow: hidden;
+}
+
+.new-arrivals__item-pic {
+    display: block;
+    width: 100%; 
+    transition: 0.3s;
+    
+    &:hover, &:focus, &:active {
+        transform: scale(1.1);
+        
+    }
+}
+
+.new-arrivals__item-info {    
+    font-size: 15px;
+}
+
+.new-arrivals__button {
+    display: block;
+    background-color: #1A1A1A; 
+    color: white;
+    font-size: 20px;
+    margin: 6.7vw auto 0;
+    padding: 20px 61px;
+}
+
+.new-arrivals__next {
+    position: absolute;
+    right: 0;
+    top:0;
+}

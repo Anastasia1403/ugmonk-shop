@@ -1,0 +1,51 @@
+.design-studio__description {    
+    color: white;
+    font-size: 35px;
+    line-height: 54px;
+    text-align: center;    
+}
+
+.design-studio__pic {
+    width: 100%;
+    min-height: 350px;
+    object-fit:cover;
+    transition: 0.5s;
+    
+    &:hover, &:focus, &:active {
+        transform: scale(1.1);
+        
+    }
+}
+
+.design-studio__pic-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.design-studio__figcaption {
+    width: 100%;    
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    max-width: 1300px;
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+
+.design-studio__text-container {    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 782px;
+    text-align: center;    
+}
+
+.design-studio__button {
+    color: white;
+    padding: 0 18px;
+    text-align: center;
+    margin-top: 10px;
+
+    &::after {
+        background-color: white;
+    }
+}

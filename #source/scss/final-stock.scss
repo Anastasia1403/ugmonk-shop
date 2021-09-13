@@ -1,0 +1,36 @@
+.final-stock {
+    background-color:  #CED3CA;
+    padding: 127px 0;   
+    margin: 0 auto;    
+}
+
+.final-stock__container {    
+    display: flex;
+    justify-content: center;    
+}
+
+.final-stock__text {
+    background-color: #F7F7F7;
+    flex-grow: 1;
+    padding: 6.5vw 0 15px 6.3vw;    
+}
+
+.final-stock__title {    
+    font-size: 3vw;
+    color: #1A1A1A;
+    line-height: 3.6vw;
+    min-width: 208px;
+}
+
+.final-stock__pic {
+    width: 100%;
+    }
+
+.final-stock__button {    
+    color: #1A1A1A;
+    margin-top: 33px;
+
+    &::after {       
+        background-color: #1A1A1A;        
+    }
+}

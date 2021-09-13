@@ -1,0 +1,28 @@
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+}
+
+.modal__container {
+      width: 80vw;
+    
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    z-index: 30;
+}
+
+.modal__pic-container {
+    margin: 10px;
+}
+
+.modal__pic {
+    width: 100%;
+    object-fit: cover;
+}
