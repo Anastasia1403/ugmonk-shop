@@ -1,0 +1,97 @@
+
+//     <div class="modal-window">
+//     <div class="cart__container">
+//         <div class="cart__title">Cart</div>
+//             div
+//         <div class="cart__item">
+//             <div class="cart__item-img-container">
+//                 <img src="" alt="" class="cart__item-img">
+//             </div>
+//             <div class="cart__item-info">
+//                 <h3 class="cart__item-title"></h3>
+//                 <div class="cart__item-cost">
+//                     <div class='button-amount__container'>
+//                         <button class="button-amount__minus">-</button>
+//                         <input class="button-amount__input" type="text" value='1'>
+//                         <button class="button-amount__plus">+</button>
+//                      </div>
+//                      <p class="cart__item-price"></p>
+//                      <p class="cart__item-total-cost"></p>
+//                 </div>
+//             </div>
+//         </div>
+//         <div class="cart__total-cost"></div>
+//         <div class="cart__button-container">
+//             <button class="cart__button cart__button-checkout">Checkout</button>
+//             <button class="cart__button cart__button-clear-cart">Clear cart</button>
+
+//         </div>
+//     </div>
+// </div>
+
+.cart__container {
+    background-color: #fff;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    z-index: 20;
+    padding: 10px;
+}
+
+.cart__title {
+    font-size: 30px;
+    color: rgb(59, 38, 7);
+    text-align: center;
+    margin: 20px auto;
+}
+.cart__content {
+    
+    width: 100%;
+    height: 70%;
+    overflow: auto;
+
+
+}
+.cart__content_empty {
+    text-align: center;
+}
+
+.cart__item {
+    display: flex;
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+.cart__item-img-container {
+    margin: 10px;
+width: 150px;
+}
+
+.cart__item-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cart__item-cost {
+    display: flex;
+}
+.cart__footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+.cart__button {
+    padding: 10px;
+    background-color: rgb(23, 56, 56);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: all 0.5s ease;
+    &:hover {
+    background-color: rgb(33, 97, 97);
+    
+
+    }
+}

@@ -30,13 +30,13 @@
                 <li class="header__menu-item">Journal</li>
                 <li class="header__menu-item">Search</li>
                 <li class="header__menu-item">Login</li>
-                <li class="header__menu-item"><img class="header__menu-item-basket" src="img/svg/Basket.svg" alt="">
+                <li class="header__menu-item">
+                    <div class="header__cart-icon-container"><img class="header__menu-item-cart-icon" src="img/svg/Basket.svg" alt="" ></div>
                 </li>
 
             </ul>
         </div>
-        </div>
-
+        
         <div class="header__analog">
 
             <img src="img/analog-1.png" alt="" class="header__analog-img">
@@ -54,13 +54,9 @@
     <nav class="nav">
         <div class="container">
             <ul class="nav__list">
-                <li class="nav__link"><a href="#!" class="nav__link-item ">New Arrivals</a>
-                </li>
+                <li class="nav__link"><a href="#!" class="nav__link-item ">New Arrivals</a></li>
                 <li class="nav__link"><a  href="#!" class="nav__link-item ">Final Stock</a></li>
-
-
                 <li class="nav__link"><a  href="#!" class="nav__link-item ">Clothing</a></li>
-
                 <li class="nav__link"><a  href="#!" class="nav__link-item ">Objects</a></li>
                 <li class="nav__link"><a  href="#!" class="nav__link-item ">Gather</a></li>
                 <li class="nav__link"><a  href="#!" class="nav__link-item ">About us</a></li>
@@ -69,107 +65,17 @@
         </div>
     </nav>
 
-
-    <!-- <div class="modal__container">
-    <div class="modal__pic-container">
-        <img class="modal__pic" src="" alt="">
-    </div>
-    <div class="modal__info">
-        <h3 class="modal__title"></h3>
-        <p class="modal__description"></p>
-        <p class="modal__price"></p>
-        <button class="modal__add-to-basket"></button>
-    </div>
-
-</div> -->
-
-
     <section class="new-arrivals" id="1">
         <div class="container">
-            <div class="new-arrivals__table">
+            <div class="new-arrivals__table">                
                 
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-1.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Preorder - Analog Starter Kit</p>
-                        <p class="new-arrivals__item-price">$78</p>
-                    </div>
-                </div>
-
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-2.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Preorder - Analog Cards</p>
-                        <p class="new-arrivals__item-price">$39</p>
-                    </div>
-                </div>
-
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-3.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Preorder - Analog Travel Case</p>
-                        <p class="new-arrivals__item-price">$32</p>
-                    </div>
-                </div>
-
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-4.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Preorder - Analog Wood Card Holder</p>
-                        <p class="new-arrivals__item-price">$59</p>
-                    </div>
-                </div>
-
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-5.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Modus Operandi - Artist Collab</p>
-                        <p class="new-arrivals__item-price">$126</p>
-                    </div>
-                </div>
-
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-6.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Modus Operandi 01 - Artist Collab</p>
-                        <p class="new-arrivals__item-price">$42</p>
-                    </div>
-                </div>
-
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-7.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Modus Operandi 02 - Artist Collab</p>
-                        <p class="new-arrivals__item-price">$42</p>
-                    </div>
-                </div>
-                <div class="new-arrivals__item">
-                    <div class="new-arrivals__item-pic-container">
-                        <img src="img/new-arrivals-8.png" alt="" class='new-arrivals__item-pic'>
-                    </div>
-                    <div class="new-arrivals__item-info">
-                        <p class="new-arrivals__item-title">Modus Operandi 01 - Artist Collab</p>
-                        <p class="new-arrivals__item-price">$42</p>
-                    </div>
-                </div>
             </div>
             <button class="new-arrivals__button">Shop new arrivals</button>
+            
         </div>
     </section>
+
+  
 
 
     <section class="section final-stock" id="2">
@@ -310,8 +216,13 @@
             </div>
         </div>
     </footer>
+    <script src="js/new-arrivals.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+
     <script src="js/modal.js"></script>
+    <script src="js/amount-button.js"></script>
+
     <script src="js/observer.js"></script>
 
 </body>

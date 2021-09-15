@@ -7,8 +7,9 @@ const gatherSection = document.querySelector('.gather');
 const aboutUsSection = document.querySelector('.design-studio');
 
 const item = document.querySelector('.new-arrivals__item')
-const newArrivalsTable = document.querySelector('.new-arrivals__table');
 const navList = document.querySelector('.nav__list');
+const modalWindow = document.querySelector('.modal-window');
+const cartIcon = document.querySelector('.header__cart-icon-container');
 
 
 /* nav scrolling*/

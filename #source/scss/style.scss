@@ -40,6 +40,47 @@ body {
     }
 }
 
+/* styles of button-amount*/
+
+
+
+             .button-amount__minus, .button-amount__plus {
+                 width: 30px;
+                 height: 30px;
+                 background-color: rgb(211, 184, 135);
+                 text-align: center;
+                 line-height: 30px;
+                 vertical-align: middle;
+                 font-size: 24px;
+                 border: 1px solid rgb(53, 38, 8);
+
+
+                 &:hover, &:focus, &:active {
+                 background-color: rgb(240, 224, 196);
+
+                 }
+             }
+    
+             .button-amount__input {
+                  padding: 4px;
+                 height: 30px;
+                 width: 40px;
+                 text-align: center;
+                 line-height: 30px;
+                 vertical-align: middle;
+                 border: 1px solid rgb(53, 38, 8);
+                 background-color: rgb(236, 235, 231);
+
+
+             }
+
+             .button-amount__container {
+                 width: 100px;
+                height: 30px;
+                display: flex;
+                justify-content: flex-start;
+             }
+
 /* style common section (final-stock & gather) */
 
 .section {
@@ -88,6 +129,8 @@ body {
 @import 'enter-email';
 @import 'footer';
 @import 'modal';
+@import 'cart';
+
 
 /* media queries*/
 @media screen and (min-width: 1440px) {
