@@ -14,12 +14,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (6, 1fr);
+    column-gap: 30px;
 }
+
+
 
 .footer__nav-item-link {
     font-size: 15px;
     color: #1A1A1A;
-    line-height: 31px;    
+    line-height: 31px;   
+    
 }
 
 .footer__copyrights {
@@ -33,8 +37,13 @@
     color: #1A1A1A;
     line-height: 20px;
     margin-right: 34px;
+    padding-top: 10px;
 }
 
+.footer__logo-wrapper {
+    width: 55px;
+    height: 88px;
+}
 .footer_logo {
     width: 100%;
 }

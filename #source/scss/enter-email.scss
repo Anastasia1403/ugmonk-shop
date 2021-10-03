@@ -31,7 +31,8 @@
 
 .enter-email__email {
     height: 48px;
-    width: 338px;
+    max-width: 338px;
+    padding: 4px 7px;
     border: 1px solid #242424;
 }
 

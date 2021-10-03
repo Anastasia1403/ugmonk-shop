@@ -12,14 +12,35 @@ body {
     height: fit-content;
 }
 
+.not-to-scroll {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1360px;
     padding: 0px 40px;
     margin: 0 auto;    
 }
 
+.button {
+    display: block;
+    padding: 10px;
+    background-color: rgb(23, 56, 56);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: all 0.5s ease;
+    border-radius: 7px;
+    height: 50px;
+    &:hover {
+    background-color: rgb(33, 97, 97);
+    
+
+    }
+}
+
 .button-arrow {
     text-align: left;
+    font-size: 15px;
     background: transparent;
     position: relative;
     color: #1A1A1A;
@@ -44,42 +65,42 @@ body {
 
 
 
-             .button-amount__minus, .button-amount__plus {
-                 width: 30px;
-                 height: 30px;
-                 background-color: rgb(211, 184, 135);
-                 text-align: center;
-                 line-height: 30px;
-                 vertical-align: middle;
-                 font-size: 24px;
-                 border: 1px solid rgb(53, 38, 8);
+.button-amount__minus, .button-amount__plus {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(211, 184, 135);
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 24px;
+    border: 1px solid rgb(53, 38, 8);
 
 
-                 &:hover, &:focus, &:active {
-                 background-color: rgb(240, 224, 196);
+    &:hover, &:focus, &:active {
+    background-color: rgb(240, 224, 196);
 
-                 }
-             }
-    
-             .button-amount__input {
-                  padding: 4px;
-                 height: 30px;
-                 width: 40px;
-                 text-align: center;
-                 line-height: 30px;
-                 vertical-align: middle;
-                 border: 1px solid rgb(53, 38, 8);
-                 background-color: rgb(236, 235, 231);
+    }
+}
+
+.button-amount__input {
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    border: 1px solid rgb(53, 38, 8);
+    background-color: rgb(236, 235, 231);
 
 
-             }
+}
 
-             .button-amount__container {
-                 width: 100px;
-                height: 30px;
-                display: flex;
-                justify-content: flex-start;
-             }
+.button-amount__container {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
 
 /* style common section (final-stock & gather) */
 
@@ -102,7 +123,7 @@ body {
     }
 
 .section__title {    
-    font-size: 3vw;
+    font-size: max(20px, 3vw);
     color: #1A1A1A;
     line-height: 3.6vw;
     min-width: 208px;
@@ -130,6 +151,8 @@ body {
 @import 'footer';
 @import 'modal';
 @import 'cart';
+@import 'confirmation';
+
 
 
 /* media queries*/
@@ -154,8 +177,9 @@ body {
     }
 
     .header__burger {
-        display: flex;
+        display: block;
     }
+
 
     .header__logo {    
         margin: 32px auto 0;
@@ -163,10 +187,10 @@ body {
 
     .header__menu {
         position: fixed;
-        width: 60vw;
+        width: 50vw;
         background-color: #fff;
         right: 100vw;
-        left:-60vw;
+        left: -100vw;
         top: 100px;
         bottom: 0;
         z-index: 5;
@@ -176,7 +200,7 @@ body {
     }
 
     .header__menu-item {
-        padding: 20px 10vw;
+        padding: 13px 10vw;
         margin: auto;
     }
 
@@ -223,6 +247,8 @@ body {
         font-size: 20px;
         line-height: 30px;
     }
+
+   
 }
 
 
@@ -272,6 +298,11 @@ body {
         column-gap: 20px;
     }
 
+
+    .footer {
+        padding: 50px 0;
+    }
+
     .footer__container {    
         flex-direction: column;
         row-gap: 30px;
@@ -279,8 +310,14 @@ body {
 
     .footer__nav {
         justify-content: center;
+  
     }
+    .footer__social {
+        justify-content: center;
+    }
+  
 
+  
 }
 
 @media screen and (max-width: 450px) {
@@ -288,10 +325,14 @@ body {
     .container {
         padding: 0px 15px;
     }
-
+    .header__menu {
+        width: 100%;
+    }
 
     .header__logo {  
-        height: 30px;
+        width: 50vw;
+        max-width: 193px;
+        margin: auto;        
     }
 
     .new-arrivals__table {
@@ -305,8 +346,7 @@ body {
     }
 
     .design-studio__figcaption {
-        bottom: 25vw;
-        
+        bottom: 25vw;        
     }
 
     .design-studio__description {
@@ -315,6 +355,33 @@ body {
 
     .modal__container {
         flex-direction: column;
+    }
+    .modal__info {
+        margin: 0;
+        
+    }
+
+    
+    .cart__container {
+ 
+        width: 100vw;
+        min-width: auto;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .footer__nav {
+        grid-template-columns: minmax(141px, 5fr) minmax(81px, 3fr);
+        column-gap: 10px;
+    }
+
+    .footer__copyrights {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    .footer__copyrights p {    
+        text-align: center;
     }
         
 }

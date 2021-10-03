@@ -1,0 +1,19 @@
+.confirmation {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;   
+    max-width: 100%;
+    height: fit-content;
+    max-height: 85vh;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.confirmation__button {
+    margin: 10px auto 0;
+}

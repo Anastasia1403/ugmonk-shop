@@ -1,15 +1,13 @@
-
-let showModalWindow = function(x) {
+let showModalWindow = function(event) {
+        if (event.target.closest('.new-arrivals__item')) {
 let modal = document.createElement('div');
     modal.classList.add('modal-window');
-    let modalArticle = x.target.closest('.new-arrivals__item').dataset.article
-    let title = x.target.closest('.new-arrivals__item').
-            querySelector('.new-arrivals__item-title').textContent;
-    let price = x.target.closest('.new-arrivals__item').
-            querySelector('.new-arrivals__item-price').textContent;
+    let item = event.target.closest('.new-arrivals__item');
+    let modalArticle = item.dataset.article
+    let title = item.querySelector('.new-arrivals__item-title').textContent;
+    let price = item.querySelector('.new-arrivals__item-price').textContent;
     document.body.appendChild(modal);
-    let imageSrc = x.target.closest('.new-arrivals__item').
-            querySelector('.new-arrivals__item-pic').src
+    let imageSrc = item.querySelector('.new-arrivals__item-pic').src
             modal
             .innerHTML = 
             `<div class='modal__container' data-article = '${modalArticle}'>
@@ -25,22 +23,22 @@ let modal = document.createElement('div');
                 <input class="button-amount__input" type="text" value='1'>
                 <button class="button-amount__plus">+</button>
              </div>
-            <button class='modal__add-to-cart'>Add to cart</button>
+            <button class='button modal__add-to-cart-button'>Add to cart</button>
             </div>
             </div>`
+
+            document.body.classList.add('not-to-scroll')
+        }
     }
 
-//     let modalWindow = {
-//             show(),
-//             close()
-//     }
-    
-    newArrivalsTable.addEventListener('click', function() { showModalWindow(event)});
+    newArrivalsTable.addEventListener('click', (event) => { showModalWindow(event)});
    
     
-    window.addEventListener('click', () => {
+    window.addEventListener('click', (event) => {
     let modalWindow = document.querySelector('.modal-window');
-        if (event.target==modalWindow) {modalWindow.remove()}
+        if (event.target==modalWindow || event.target.classList.contains('modal-close-button')) {
+                modalWindow.remove();
+                menu.classList.contains('header__menu_show') ? null : document.body.classList.remove('not-to-scroll')}
     })
     
     

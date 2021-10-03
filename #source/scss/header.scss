@@ -23,26 +23,74 @@
 }
 
 .header__burger {
+    position: relative;
     width: 40px;
     height: 40px;
     margin: 30px;
-    position: absolute;
     left: 0;
-    top: 0;
+    top: 0;    
     flex-direction: column;
     justify-content: space-between;
     display: none;
 }
 
-.header__burger div {
-    width: 50px;
-    height: 3px;
-    background-color: #1a1a1a;   
+
+.header__burger-stripe {
+    width: 40px;
+    height: 4px;   
+    left: 0;
+    top: 18px;
+    background-color: #1a1a1a;  
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 2px;
+    
+     
+}
+
+.header__burger-stripe::after {
+    position: absolute;
+    left: 0;
+    top: -18px;    
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #1a1a1a;
+    transition: 0.5s;  
+    border-radius: 2px;
+}
+
+.header__burger-stripe::before {
+    position: absolute;
+    left: 0;
+    top: 18px;
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #1a1a1a;  
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+.header__burger-stripe_arrow::after {
+    transform-origin: 0 0;
+    transform:  translateX(15px) rotate(37deg);
+    width: 32px;
+    border-radius: 2px;
+
+}
+
+.header__burger-stripe_arrow::before {
+    transform-origin:  0 4px;
+    transform:  translateX(15px) rotate(-37deg);
+    width: 32px;
+    border-radius: 2px;
+
 }
 
 .header__logo {    
     margin: 32px 66px 0 75px;
-    max-height: 41px;
+    max-width: 265px;
 }
 
 .header__menu-item {
